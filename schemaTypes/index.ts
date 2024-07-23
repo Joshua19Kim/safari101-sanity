@@ -9,5 +9,4 @@ export const schemaTypes = [
   eastAfricaAreaListType,
   activityListType,
   climbingAreaListType,
-
 ]

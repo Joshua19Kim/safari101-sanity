@@ -3,6 +3,7 @@ import {visionTool} from '@sanity/vision'
 import {structureTool} from 'sanity/structure'
 import {schemaTypes} from './schemaTypes'
 import {getStartedPlugin} from './plugins/sanity-plugin-tutorial'
+import {emailRequest} from './schemaTypes/emailRequest'
 
 const devOnlyPlugins = [getStartedPlugin()]
 
@@ -22,7 +23,14 @@ export default defineConfig({
   ],
 
   schema: {
-    types: schemaTypes,
+    types: [...schemaTypes, emailRequest],
   },
+
+
+
+
+
+
+
 })
 

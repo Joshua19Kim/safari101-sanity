@@ -22,7 +22,7 @@ export default defineConfig({
   ],
 
   schema: {
-    types: [...schemaTypes],
+    types: schemaTypes,
   },
 
 

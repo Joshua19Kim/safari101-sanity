@@ -10,15 +10,13 @@ export default defineConfig({
   name: 'default',
   title: 'safari101',
 
-  projectId: 'oeam3q7c',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID,
+  dataset: process.env.SANITY_STUDIO_DATASET,
 
   plugins: [
     structureTool(),
     visionTool(),
     ...(isDev ? devOnlyPlugins : []),
-
-
   ],
 
   schema: {

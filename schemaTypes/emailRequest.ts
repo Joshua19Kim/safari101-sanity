@@ -14,12 +14,12 @@ export const emailRequest = defineType({
     defineField({
       name: 'adults',
       title: 'Adult',
-      type: 'number',
+      type: 'string',
     }),
     defineField({
       name: 'children',
       title: 'Children',
-      type: 'number',
+      type: 'string',
     }),
     defineField({
       name: 'clientEmail',

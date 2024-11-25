@@ -4,16 +4,22 @@ export const emailRequest = defineType({
   name: 'emailRequest',
   title: 'Email Request',
   type: 'document',
+  preview: {
+    select: {
+      title: 'clientEmail',
+      subtitle: 'createdAt'
+    }
+  },
   fields: [
     defineField({
       name: 'adults',
       title: 'Adult',
-      type: 'string',
+      type: 'number',
     }),
     defineField({
       name: 'children',
       title: 'Children',
-      type: 'string',
+      type: 'number',
     }),
     defineField({
       name: 'clientEmail',

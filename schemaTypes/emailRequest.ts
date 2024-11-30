@@ -37,6 +37,11 @@ export const emailRequest = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'selectedOptions',
+      title: 'Selected Options',
+      type: 'string',
+    }),
+    defineField({
       name: 'createdAt',
       title: 'Created At',
       type: 'string',

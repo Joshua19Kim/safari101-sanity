@@ -42,6 +42,21 @@ export const emailRequest = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'selectedTripName',
+      title: 'Selected Trip Name by User',
+      type: 'string',
+    }),
+    defineField({
+      name: 'selectedTripPrice',
+      title: 'Selected Trip Price by User',
+      type: 'string',
+    }),
+    defineField({
+      name: 'selectedTripDescription',
+      title: 'Selected Trip Description by User',
+      type: 'string',
+    }),
+    defineField({
       name: 'createdAt',
       title: 'Created At',
       type: 'string',

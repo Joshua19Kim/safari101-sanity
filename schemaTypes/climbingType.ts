@@ -21,7 +21,7 @@ export const climbingType = defineType({
     }),
     defineField({
       name: 'tripCategory',
-      title: 'Trip Category',
+      title: 'Trip Category (Key Selection on Top nav bar or Side bar)',
       type: 'string',
       options: {
         list: [
@@ -35,7 +35,7 @@ export const climbingType = defineType({
 
     defineField({
       name: 'duration',
-      title: 'Duration (days)',
+      title: 'Duration (days) (Clients can filter out trips with this duration)',
       type: 'number',
       validation: (Rule: Rule) =>
         Rule.required()
@@ -44,18 +44,26 @@ export const climbingType = defineType({
     }),
     defineField({
       name: 'tripType',
-      title: 'Trip Type',
+      title: 'Trip Type (Select all the relevant options. This trip will be appear based on these selected options. Also, client can filter out.)',
       type: 'array',
       of: [{
         type: 'string',
         options: {
           list: [
             { title: 'Safari', value: 'safari' },
-            { title: 'Zanzibar', value: 'zanzibar' },
             { title: 'Honeymoon', value: 'honeymoon' },
             { title: 'Family-friendly', value: 'familyFriendly' },
             { title: 'Diamond Luxury', value: 'diamondLuxury' },
-            { title: 'Kilimanjaro', value: 'kilimanjaro' }
+            { title: 'Kilimanjaro', value: 'kilimanjaro' },
+            { title: 'Zanzibar', value: 'zanzibar' },
+            { title: 'Uganda', value: 'uganda' },
+            { title: 'Rwanda', value: 'rwanda' },
+            { title: 'Kenya', value: 'kenya' },
+            { title: 'Tanzania', value: 'tanzania' },
+            { title: 'Oldnoyo Lengai', value: 'oldnoyoLengai' },
+            { title: 'Meru', value: 'meru' },
+            { title: 'Day Trips', value: 'dayTrips' },
+            { title: 'Photographic Safari', value: 'photographicSafari' }
           ]
         }
       }],

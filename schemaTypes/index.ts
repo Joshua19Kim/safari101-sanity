@@ -8,7 +8,6 @@ import {emailRequest} from './emailRequest'
 export const schemaTypes = [
   tripType,
   eastAfricaType,
-  activityListType,
   climbingType,
   emailRequest,
 

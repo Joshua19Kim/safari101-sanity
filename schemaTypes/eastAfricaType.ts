@@ -19,8 +19,8 @@ export const eastAfricaType = defineType({
 
     }),
     defineField({
-      name: 'region',
-      title: 'Region',
+      name: 'tripCategory',
+      title: 'Trip Category',
       type: 'string',
       options: {
         list: [

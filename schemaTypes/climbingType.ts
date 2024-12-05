@@ -20,7 +20,7 @@ export const climbingType = defineType({
 
     }),
     defineField({
-      name: 'Climbing Area',
+      name: 'climbingArea',
       title: 'Climbing Area',
       type: 'string',
       options: {

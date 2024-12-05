@@ -51,6 +51,7 @@ export const climbingType = defineType({
         options: {
           list: [
             { title: 'Safari', value: 'safari' },
+            { title: 'Climbing', value: 'climbing' },
             { title: 'Honeymoon', value: 'honeymoon' },
             { title: 'Family-friendly', value: 'familyFriendly' },
             { title: 'Diamond Luxury', value: 'diamondLuxury' },

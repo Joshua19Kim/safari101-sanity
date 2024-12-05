@@ -1,9 +1,9 @@
 import {defineField, defineType} from 'sanity'
 import {Rule} from 'sanity'
 
-export const tripType = defineType({
-  name: 'trip',
-  title: 'Trip',
+export const eastAfricaType = defineType({
+  name: 'eastAfrica',
+  title: 'East Africa',
   type: 'document',
   fields: [
     defineField({
@@ -19,20 +19,20 @@ export const tripType = defineType({
 
     }),
     defineField({
-      name: 'tripCategory',
-      title: 'Trip Category',
+      name: 'region',
+      title: 'Region',
       type: 'string',
       options: {
         list: [
-          { title: 'Safari', value: 'safari' },
-          { title: 'Kilimanjaro', value: 'kilimanjaro' },
-          { title: 'Zanzibar', value: 'zanzibar' },
-          { title: 'Day Trips', value: 'dayTrips' },
-          { title: 'Photographic Safari', value: 'photographicSafari' }
+          { title: 'Uganda', value: 'uganda' },
+          { title: 'Rwanda', value: 'rwanda' },
+          { title: 'Kenya', value: 'kenya' },
+          { title: 'Tanzania', value: 'tanzania' },
         ]
       },
-      validation: (Rule: Rule) => Rule.required().error('Trip Category is required')
+      validation: (Rule: Rule) => Rule.required().error('Region is required')
     }),
+
     defineField({
       name: 'duration',
       title: 'Duration (days)',

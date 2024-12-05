@@ -1,15 +1,15 @@
 import {tripType} from './tripType'
-import {eastAfricaAreaListType} from './eastAfricaAreaListType'
+import {eastAfricaType} from './eastAfricaType'
 import {activityListType} from './activityListType'
-import {climbingAreaListType} from './climbingAreaListType'
+import {climbingType} from './climbingType'
 import {emailRequest} from './emailRequest'
 
 
 export const schemaTypes = [
   tripType,
-  eastAfricaAreaListType,
+  eastAfricaType,
   activityListType,
-  climbingAreaListType,
+  climbingType,
   emailRequest,
 
 ]

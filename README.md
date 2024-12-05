@@ -1,8 +1,8 @@
 # Sanity Clean Content Studio
 
-### To start Snnity Studio, 
+### To start Sanity Studio Locally, 
 
-### enter 'npm run dev' in command line
+### enter 'sanity dev' in command line
 
 
 

@@ -6,6 +6,20 @@ export const climbingType = defineType({
   name: 'climbing',
   title: 'Climbing',
   type: 'document',
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'cost',
+      category: 'tripCategory'
+    },
+    prepare(selection) {
+      const {title, subtitle, category} = selection
+      return {
+        title: title,
+        subtitle: `Cost: $${subtitle} | Category: ${category}`
+      }
+    }
+  },
   fields: [
     defineField({
       name: 'name',

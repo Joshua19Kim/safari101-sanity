@@ -9,13 +9,15 @@ export const tripType = defineType({
     select: {
       title: 'name',
       subtitle: 'cost',
-      category: 'tripCategory'
+      category: 'tripCategory',
+      media: 'mainImage'
     },
     prepare(selection) {
-      const {title, subtitle, category} = selection
+      const {title, subtitle, category, media} = selection
       return {
         title: title,
-        subtitle: `Cost: $${subtitle} | Category: ${category}`
+        subtitle: `Cost: $${subtitle} | Cat: ${category}`,
+        media: media
       }
     }
   },
